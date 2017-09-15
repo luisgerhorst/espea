@@ -73,7 +73,7 @@ public class CouplerDistinctTournament implements Coupler {
      * @see org.opt4j.optimizers.ea.Coupler
      */
     @Override
-	public Collection<Pair<Individual>> getCouples(final int requested,
+    public Collection<Pair<Individual>> getCouples(final int requested,
                                                    final List<Individual> parents) {
         final Collection<Pair<Individual>> couples =
             new ArrayList<Pair<Individual>>(requested);
@@ -122,8 +122,8 @@ public class CouplerDistinctTournament implements Coupler {
                 couples.add(pair);
             }
         }
-		return couples;
-	}
+        return couples;
+    }
 
     private Individual tournamentSelect(final Collection<Individual> parents) {
         final List<Individual> tournament = randomSubset(parents, tournamentSize);

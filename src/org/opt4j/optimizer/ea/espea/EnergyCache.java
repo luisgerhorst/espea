@@ -282,7 +282,7 @@ public class EnergyCache implements IndividualSetListener {
     {
 
         switch (mutationStrategy) {
-		case INVERSE:
+        case INVERSE:
             final double summandMinus;
             if (removedIndex > memberIndex) {
                 summandMinus = memberSummands[removedIndex][memberIndex];
@@ -308,11 +308,11 @@ public class EnergyCache implements IndividualSetListener {
             // occur in the early archive and get overridden anyway the next time
             // the normalizer invalidates the cache.
             memberSums[memberIndex] -= summandMinus;
-			break;
+            break;
         default: // RECALCULATE
             memberSums[memberIndex] = 0.0;
 
-			for (final IndexMap.Entry entry : indexMap) {
+            for (final IndexMap.Entry entry : indexMap) {
                 final double summandPlus;
                 if (entry.index > memberIndex) {
                     summandPlus = memberSummands[entry.index][memberIndex];
@@ -324,8 +324,8 @@ public class EnergyCache implements IndividualSetListener {
 
                 memberSums[memberIndex] += summandPlus;
             }
-			break;
-		}
+            break;
+        }
     }
 
     private double energyBetween(Objectives a, Objectives b) {

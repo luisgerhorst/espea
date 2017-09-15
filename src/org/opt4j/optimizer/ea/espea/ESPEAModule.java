@@ -85,22 +85,22 @@ public class ESPEAModule extends OptimizerModule {
 
         // Used by EnergyArchive
         switch (scalarizationFunctionType) {
-		case SUM_OF_OBJECTIVES:
-			bind(ScalarizationFunction.class)
+        case SUM_OF_OBJECTIVES:
+            bind(ScalarizationFunction.class)
                 .to(ScalarizationFunctionSumOfObjectives.class)
                 .in(SINGLETON);
-			break;
+            break;
         case CHEBYSHEV:
-			bind(ScalarizationFunction.class)
+            bind(ScalarizationFunction.class)
                 .to(ScalarizationFunctionChebyshev.class)
                 .in(SINGLETON);
-			break;
-		default: // NO_PREFERENCE
-			bind(ScalarizationFunction.class)
+            break;
+        default: // NO_PREFERENCE
+            bind(ScalarizationFunction.class)
                 .to(ScalarizationFunctionNoPreference.class)
                 .in(SINGLETON);
-			break;
-		}
+            break;
+        }
 
         if (individualCompleterMaxThreads > 1) {
             bind(IndividualCompleter.class)
@@ -111,15 +111,15 @@ public class ESPEAModule extends OptimizerModule {
 
 
     @Constant(value = "maxThreads", namespace = ParallelIndividualCompleter.class)
-	protected int individualCompleterMaxThreads = 1;
+    protected int individualCompleterMaxThreads = 1;
 
     public int getIndividualCompleterMaxThreads() {
-		return individualCompleterMaxThreads;
-	}
+        return individualCompleterMaxThreads;
+    }
 
-	public void setIndividualCompleterMaxThreads(int individualCompleterMaxThreads) {
-		this.individualCompleterMaxThreads = individualCompleterMaxThreads;
-	}
+    public void setIndividualCompleterMaxThreads(int individualCompleterMaxThreads) {
+        this.individualCompleterMaxThreads = individualCompleterMaxThreads;
+    }
 
 
     @Constant(value = "replacementStrategy", namespace = EnergyArchive.class)
@@ -127,31 +127,31 @@ public class ESPEAModule extends OptimizerModule {
         EnergyArchive.ReplacementStrategy.WORST_IN_ARCHIVE;
 
     public EnergyArchive.ReplacementStrategy getReplacementStrategy() {
-		return replacementStrategy;
-	}
+        return replacementStrategy;
+    }
 
     public void setReplacementStrategy(EnergyArchive.ReplacementStrategy replacementStrategy) {
-		this.replacementStrategy = replacementStrategy;
-	}
+        this.replacementStrategy = replacementStrategy;
+    }
 
 
     public enum ScalarizationFunctionType {
-		NO_PREFERENCE,
-		SUM_OF_OBJECTIVES,
+        NO_PREFERENCE,
+        SUM_OF_OBJECTIVES,
         CHEBYSHEV;
-	}
+    }
 
     @Info("The type scalarization function to determine preference information.")
     protected ScalarizationFunctionType scalarizationFunctionType =
         ScalarizationFunctionType.NO_PREFERENCE;
 
     public ScalarizationFunctionType getScalarizationFunctionType() {
-		return scalarizationFunctionType;
-	}
+        return scalarizationFunctionType;
+    }
 
     public void setScalarizationFunctionType(ScalarizationFunctionType scalarizationFunctionType) {
-		this.scalarizationFunctionType = scalarizationFunctionType;
-	}
+        this.scalarizationFunctionType = scalarizationFunctionType;
+    }
 
 
     @MaxIterations
@@ -167,89 +167,89 @@ public class ESPEAModule extends OptimizerModule {
 
 
     @Constant(value = "capacity", namespace = EnergyArchive.class)
-	protected int archiveCapacity = 100;
+    protected int archiveCapacity = 100;
 
     public int getArchiveCapacity() {
-		return archiveCapacity;
-	}
+        return archiveCapacity;
+    }
 
-	public void setArchiveCapacity(int archiveCapacity) {
-		this.archiveCapacity = archiveCapacity;
-	}
+    public void setArchiveCapacity(int archiveCapacity) {
+        this.archiveCapacity = archiveCapacity;
+    }
 
 
     @Constant(value = "tournamentSize", namespace = CouplerDistinctTournament.class)
-	protected int tournamentSize = 2;
+    protected int tournamentSize = 2;
 
     public int getTournamentSize() {
-		return tournamentSize;
-	}
+        return tournamentSize;
+    }
 
-	public void setTournamentSize(int tournamentSize) {
-		this.tournamentSize = tournamentSize;
-	}
+    public void setTournamentSize(int tournamentSize) {
+        this.tournamentSize = tournamentSize;
+    }
 
     /**
      * Also known as the differential weight or F.
      */
     @Constant(value = "scalingFactor", namespace = MatingDifferentialEvolution.class)
-	protected double differentialEvolutionScalingFactor = 0.5;
+    protected double differentialEvolutionScalingFactor = 0.5;
 
     public double getDifferentialEvolutionScalingFactor() {
-		return differentialEvolutionScalingFactor;
-	}
+        return differentialEvolutionScalingFactor;
+    }
 
-	public void setDifferentialEvolutionScalingFactor(double differentialEvolutionScalingFactor) {
-		this.differentialEvolutionScalingFactor = differentialEvolutionScalingFactor;
-	}
+    public void setDifferentialEvolutionScalingFactor(double differentialEvolutionScalingFactor) {
+        this.differentialEvolutionScalingFactor = differentialEvolutionScalingFactor;
+    }
 
 
     @Constant(value = "rate", namespace = ConstantCrossoverRate.class)
-	protected double crossoverRate = 0.9;
+    protected double crossoverRate = 0.9;
 
     public double getCrossoverRate() {
-		return crossoverRate;
-	}
+        return crossoverRate;
+    }
 
-	public void setCrossoverRate(double crossoverRate) {
-		this.crossoverRate = crossoverRate;
-	}
+    public void setCrossoverRate(double crossoverRate) {
+        this.crossoverRate = crossoverRate;
+    }
 
 
     @Constant(value = "initialPopulationSize", namespace = ESPEA.class)
-	protected int initialPopulationSize = 100;
+    protected int initialPopulationSize = 100;
 
     public int getInitialPopulationSize() {
-		return initialPopulationSize;
-	}
+        return initialPopulationSize;
+    }
 
-	public void setInitialPopulationSize(int initialPopulationSize) {
-		this.initialPopulationSize = initialPopulationSize;
-	}
+    public void setInitialPopulationSize(int initialPopulationSize) {
+        this.initialPopulationSize = initialPopulationSize;
+    }
 
 
     @Constant(value = "earlyGenerationSize", namespace = ESPEA.class)
-	protected int earlyGenerationSize = 1;
+    protected int earlyGenerationSize = 1;
 
     public int getEarlyGenerationSize() {
-		return earlyGenerationSize;
-	}
+        return earlyGenerationSize;
+    }
 
-	public void setEarlyGenerationSize(int earlyGenerationSize) {
-		this.earlyGenerationSize = earlyGenerationSize;
-	}
+    public void setEarlyGenerationSize(int earlyGenerationSize) {
+        this.earlyGenerationSize = earlyGenerationSize;
+    }
 
 
     @Constant(value = "cacheMutationStrategy", namespace = EnergyCache.class)
-	protected EnergyCache.MutationStrategy cacheMutationStrategy = EnergyCache.MutationStrategy.INVERSE;
+    protected EnergyCache.MutationStrategy cacheMutationStrategy = EnergyCache.MutationStrategy.INVERSE;
 
     public EnergyCache.MutationStrategy getCacheMutationStrategy() {
-		return cacheMutationStrategy;
-	}
+        return cacheMutationStrategy;
+    }
 
-	public void setCacheMutationStrategy(EnergyCache.MutationStrategy cacheMutationStrategy) {
-		this.cacheMutationStrategy = cacheMutationStrategy;
-	}
+    public void setCacheMutationStrategy(EnergyCache.MutationStrategy cacheMutationStrategy) {
+        this.cacheMutationStrategy = cacheMutationStrategy;
+    }
 
 
 }

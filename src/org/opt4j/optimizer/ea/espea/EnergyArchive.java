@@ -75,7 +75,7 @@ public class EnergyArchive extends BoundedArchive {
     }
 
     @Override
-	protected boolean updateWithNondominated(final Collection<Individual> candidates)
+    protected boolean updateWithNondominated(final Collection<Individual> candidates)
     {
         boolean changed = false;
         for (final Individual candidate : candidates) {
@@ -85,8 +85,8 @@ public class EnergyArchive extends BoundedArchive {
                 changed |= replaceWithNondominated(candidate);
             }
         }
-		return changed;
-	}
+        return changed;
+    }
 
     /**
      * Replaces an archive member with the candidate if the replacement
@@ -141,10 +141,10 @@ public class EnergyArchive extends BoundedArchive {
     }
 
     public enum ReplacementStrategy {
-		BEST_FEASIBLE_POSITION,
+        BEST_FEASIBLE_POSITION,
         WORST_IN_ARCHIVE,
         LARGEST_ENERGY_DECREASE;
-	}
+    }
 
     private Individual bestFeasiblePosition(final Collection<RemovalOption> replaceableMembers) {
         Individual toBeReplaced = null;

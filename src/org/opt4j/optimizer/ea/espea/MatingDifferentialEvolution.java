@@ -54,13 +54,13 @@ import com.google.inject.Inject;
 public class MatingDifferentialEvolution implements Mating {
 
     private final IndividualFactory individualFactory;
-	private final Crossover<Genotype> crossover;
+    private final Crossover<Genotype> crossover;
     private final Algebra<Genotype> algebra;
     private final Rand random;
     private final Term term;
 
-	@Inject
-	public MatingDifferentialEvolution(IndividualFactory individualFactory,
+    @Inject
+    public MatingDifferentialEvolution(IndividualFactory individualFactory,
                                        Crossover<Genotype> crossover,
                                        Algebra<Genotype> algebra,
                                        Rand random,
@@ -73,129 +73,129 @@ public class MatingDifferentialEvolution implements Mating {
         this.random = random;
 
         final Index i0 = new Index(0);
-		final Index i1 = new Index(1);
-		final Index i2 = new Index(2);
+        final Index i1 = new Index(1);
+        final Index i2 = new Index(2);
         final Var c = new Var(scalingFactor);
-		this.term = new Add(i0, new Mult(c, new Sub(i1, i2)));
-	}
+        this.term = new Add(i0, new Mult(c, new Sub(i1, i2)));
+    }
 
-	/*
-	 * (non-Javadoc)
-	 *
-	 * @see org.opt4j.optimizer.ea.Mating#getOffspring(int,
-	 * org.opt4j.core.Individual[])
-	 */
-	@Override
-	public Collection<Individual> getOffspring(final int size,
+    /*
+     * (non-Javadoc)
+     *
+     * @see org.opt4j.optimizer.ea.Mating#getOffspring(int,
+     * org.opt4j.core.Individual[])
+     */
+    @Override
+    public Collection<Individual> getOffspring(final int size,
                                                final Individual... parents) {
-		return getOffspring(size, Arrays.asList(parents));
-	}
+        return getOffspring(size, Arrays.asList(parents));
+    }
 
-	/**
-	 * Creates offspring from a given set of parents. size must be the number of
-	 * parents.
-	 */
-	@Override
-	public Collection<Individual> getOffspring(final int size,
+    /**
+     * Creates offspring from a given set of parents. size must be the number of
+     * parents.
+     */
+    @Override
+    public Collection<Individual> getOffspring(final int size,
                                                final Collection<Individual> parents) {
         assert size == parents.size() : "Size must be the number of parents given";
         assert parents.size() >= 4 : "Differential evolution requires at least 4 parents";
 
         final List<Individual> list = new ArrayList<Individual>(parents);
-		final List<Individual> offsprings = new ArrayList<Individual>(size);
-		for (final Individual parent : parents) {
-			final Individual offspring = createOffspring(parent, list, term);
-			offsprings.add(offspring);
-		}
+        final List<Individual> offsprings = new ArrayList<Individual>(size);
+        for (final Individual parent : parents) {
+            final Individual offspring = createOffspring(parent, list, term);
+            offsprings.add(offspring);
+        }
         return offsprings;
-	}
+    }
 
-	private Individual createOffspring(Individual parent,
+    private Individual createOffspring(Individual parent,
                                        List<Individual> individuals,
                                        Term term) {
         final Triple triple = getTriple(parent, individuals);
 
-		final Genotype g0 = triple.getFirst().getGenotype();
-		final Genotype g1 = triple.getSecond().getGenotype();
-		final Genotype g2 = triple.getThird().getGenotype();
+        final Genotype g0 = triple.getFirst().getGenotype();
+        final Genotype g1 = triple.getSecond().getGenotype();
+        final Genotype g2 = triple.getThird().getGenotype();
 
-		final Genotype result = algebra.algebra(term, g0, g1, g2);
-		final Pair<Genotype> g = crossover.crossover(result, parent.getGenotype());
+        final Genotype result = algebra.algebra(term, g0, g1, g2);
+        final Pair<Genotype> g = crossover.crossover(result, parent.getGenotype());
 
-		final Individual i;
-		if (random.nextBoolean()) {
-			i = individualFactory.create(g.getFirst());
-		} else {
-			i = individualFactory.create(g.getSecond());
-		}
-		return i;
-	}
+        final Individual i;
+        if (random.nextBoolean()) {
+            i = individualFactory.create(g.getFirst());
+        } else {
+            i = individualFactory.create(g.getSecond());
+        }
+        return i;
+    }
 
-	/**
-	 * The {@link Triple} is a container for three individuals.
-	 *
-	 * @author lukasiewycz
-	 *
-	 */
-	private static class Triple {
-		protected final Individual first;
+    /**
+     * The {@link Triple} is a container for three individuals.
+     *
+     * @author lukasiewycz
+     *
+     */
+    private static class Triple {
+        protected final Individual first;
 
-		protected final Individual second;
+        protected final Individual second;
 
-		protected final Individual third;
+        protected final Individual third;
 
-		public Triple(final Individual first,
+        public Triple(final Individual first,
                       final Individual second,
                       final Individual third) {
-			super();
-			this.first = first;
-			this.second = second;
-			this.third = third;
-		}
+            super();
+            this.first = first;
+            this.second = second;
+            this.third = third;
+        }
 
-		public Individual getFirst() {
-			return first;
-		}
+        public Individual getFirst() {
+            return first;
+        }
 
-		public Individual getSecond() {
-			return second;
-		}
+        public Individual getSecond() {
+            return second;
+        }
 
-		public Individual getThird() {
-			return third;
-		}
-	}
+        public Individual getThird() {
+            return third;
+        }
+    }
 
-	/**
-	 * Returns three different {@link Individual}s from the {@code individuals}
-	 * list. Each {@link Individual} is not equal to the parent.
-	 *
-	 * @param parent
-	 *            the parent Individual
-	 * @param individuals
-	 *            the population
-	 * @return the three individuals as a Triple
-	 */
-	private Triple getTriple(final Individual parent,
+    /**
+     * Returns three different {@link Individual}s from the {@code individuals}
+     * list. Each {@link Individual} is not equal to the parent.
+     *
+     * @param parent
+     *            the parent Individual
+     * @param individuals
+     *            the population
+     * @return the three individuals as a Triple
+     */
+    private Triple getTriple(final Individual parent,
                              final List<Individual> individuals) {
-		individuals.remove(parent);
+        individuals.remove(parent);
         assert individuals.size() >= 3: "No individuals left";
-		final Individual ind0 = individuals
-				.remove(random.nextInt(individuals.size()));
-		final Individual ind1 = individuals
-				.remove(random.nextInt(individuals.size()));
-		final Individual ind2 = individuals
-				.remove(random.nextInt(individuals.size()));
+        final Individual ind0 = individuals
+                .remove(random.nextInt(individuals.size()));
+        final Individual ind1 = individuals
+                .remove(random.nextInt(individuals.size()));
+        final Individual ind2 = individuals
+                .remove(random.nextInt(individuals.size()));
 
-		final Triple triple = new Triple(ind0, ind1, ind2);
+        final Triple triple = new Triple(ind0, ind1, ind2);
 
-		individuals.add(parent);
-		individuals.add(ind0);
-		individuals.add(ind1);
-		individuals.add(ind2);
+        individuals.add(parent);
+        individuals.add(ind0);
+        individuals.add(ind1);
+        individuals.add(ind2);
 
-		return triple;
+        return triple;
 
-	}
+    }
 
 }
