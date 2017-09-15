@@ -1,0 +1,30 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+// Eclipse directory layout
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/org/opt4j/optimizer/ea/espea']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'lib', include: ['*.jar'])
+    runtime fileTree(dir: 'lib', include: ['*.jar'])
+}
+
+// via bbc-ss17-espea.launch
+
+mainClassName="org.opt4j.core.start.Opt4J"
+applicationDefaultJvmArgs = [
+    "-Xmx2g",
+    "-enableassertions",
+    // For use with VisualVM:
+    "-Xshare:off"]
+
+run {
+    args "bbc-ss17-espea.xml"
+}

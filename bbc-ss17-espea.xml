@@ -1,0 +1,50 @@
+<configuration>
+  <module class="org.opt4j.bcceval.BoundCompleterModule">
+    <property name="bound">100000</property>
+  </module>
+  <module class="org.opt4j.benchmarks.wfg.WFGModule">
+    <property name="function">WFG1</property>
+    <property name="m">2</property>
+    <property name="k">6</property>
+    <property name="l">4</property>
+    <property name="encoding">DOUBLE</property>
+    <property name="bits">30</property>
+  </module>
+  <module class="org.opt4j.operators.crossover.BasicCrossoverModule">
+    <property name="booleanType">RATE</property>
+    <property name="booleanRate">0.5</property>
+    <property name="booleanXPoints">1</property>
+    <property name="doubleType">SBX</property>
+    <property name="alpha">0.5</property>
+    <property name="nu">20.0</property>
+    <property name="integerType">RATE</property>
+    <property name="integerRate">0.5</property>
+    <property name="integerXPoints">1</property>
+    <property name="permutationType">ONEPOINT</property>
+    <property name="rotation">false</property>
+  </module>
+  <module class="org.opt4j.operators.mutate.BasicMutateModule">
+    <property name="doubleType">POLYNOMIAL</property>
+    <property name="eta">20.0</property>
+    <property name="sigma">0.1</property>
+    <property name="mutationRateType">ADAPTIVE</property>
+    <property name="mutationRate">0.0</property>
+    <property name="permutationType">MIXED</property>
+  </module>
+  <module class="org.opt4j.optimizer.ea.espea.ESPEAModule">
+    <property name="archiveCapacity">50</property>
+    <property name="crossoverRate">0.9</property>
+    <property name="differentialEvolutionScalingFactor">0.7</property>
+    <property name="earlyGenerationSizeFactor">0.2</property>
+    <property name="initialPopulationSizeFactor">1.0</property>
+    <property name="iterations">1000</property>
+    <property name="replacementStrategy">WORST_IN_ARCHIVE</property>
+    <property name="scalarizationFunctionType">NO_PREFERENCE</property>
+    <property name="tournamentSize">2</property>
+  </module>
+  <module class="org.opt4j.viewer.ViewerModule">
+    <property name="closeEvent">STOP</property>
+    <property name="closeOnStop">false</property>
+    <property name="title">Opt4J 3.0 Viewer</property>
+  </module>
+</configuration>

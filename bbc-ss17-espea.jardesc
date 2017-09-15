@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ANSI_X3.4-1968" standalone="no"?>
+<jardesc>
+    <jar path="bbc-ss17-espea/build/bbc-ss17-espea.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/bbc-ss17-espea/export.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="true" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="/xanalyzer/META-INF/MANIFEST.MF" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="true" exportOutputFolder="false">
+        <file path="/bbc-ss17-espea/bbc-ss17-espea.xml"/>
+        <file path="/bbc-ss17-espea/.project"/>
+        <javaElement handleIdentifier="=bbc-ss17-espea/src"/>
+        <file path="/bbc-ss17-espea/.classpath"/>
+        <file path="/bbc-ss17-espea/bbc-ss17-espea.launch"/>
+    </selectedElements>
+</jardesc>

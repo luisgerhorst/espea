@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="bbc-ss17-espea/build/bbc-ss17-espea.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/bbc-ss17-espea/export.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="true" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="/xanalyzer/META-INF/MANIFEST.MF" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="true" exportOutputFolder="false">
+        <javaElement handleIdentifier="=bbc-ss17-espea/src&lt;org.opt4j.optimizer.ea.espea{ScalarizationFunction.java"/>
+        <file path="/bbc-ss17-espea/.project"/>
+        <javaElement handleIdentifier="=bbc-ss17-espea/src&lt;org"/>
+        <javaElement handleIdentifier="=bbc-ss17-espea/src&lt;org.opt4j.optimizer.ea.espea{EnergyCache.java"/>
+        <javaElement handleIdentifier="=bbc-ss17-espea/src&lt;org.opt4j.optimizer.ea.espea{CouplerDistinctTournament.java"/>
+        <file path="/bbc-ss17-espea/bbc-ss17-espea.launch"/>
+        <file path="/bbc-ss17-espea/bbc-ss17-espea.jardesc"/>
+        <file path="/bbc-ss17-espea/bbc-ss17-espea.xml"/>
+        <javaElement handleIdentifier="=bbc-ss17-espea/src&lt;org.opt4j.optimizer.ea.espea{MatingDifferentialEvolution.java"/>
+        <javaElement handleIdentifier="=bbc-ss17-espea/src&lt;org.opt4j.optimizer.ea.espea{IndexMap.java"/>
+        <javaElement handleIdentifier="=bbc-ss17-espea/src&lt;org.opt4j.optimizer.ea.espea{EnergyComparator.java"/>
+        <javaElement handleIdentifier="=bbc-ss17-espea/src&lt;org.opt4j.optimizer.ea.espea{ScalarizationFunctionNoPreference.java"/>
+        <javaElement handleIdentifier="=bbc-ss17-espea/src&lt;org.opt4j.optimizer.ea"/>
+        <file path="/bbc-ss17-espea/.classpath"/>
+        <javaElement handleIdentifier="=bbc-ss17-espea/src&lt;org.opt4j.optimizer.ea.espea{ESPEA.java"/>
+        <javaElement handleIdentifier="=bbc-ss17-espea/src&lt;org.opt4j.optimizer.ea.espea{EnergyArchive.java"/>
+        <javaElement handleIdentifier="=bbc-ss17-espea/src&lt;org.opt4j.optimizer.ea.espea{ScalarizationFunctionSumOfObjectives.java"/>
+        <javaElement handleIdentifier="=bbc-ss17-espea/src&lt;org.opt4j.optimizer.ea.espea{ScalarizationFunctionChebyshev.java"/>
+        <javaElement handleIdentifier="=bbc-ss17-espea/src&lt;org.opt4j.optimizer"/>
+        <javaElement handleIdentifier="=bbc-ss17-espea/src&lt;org.opt4j.optimizer.ea.espea{Normalizer.java"/>
+        <javaElement handleIdentifier="=bbc-ss17-espea/src&lt;org.opt4j.optimizer.ea.espea{ESPEAModule.java"/>
+        <javaElement handleIdentifier="=bbc-ss17-espea/src&lt;org.opt4j"/>
+    </selectedElements>
+</jardesc>
