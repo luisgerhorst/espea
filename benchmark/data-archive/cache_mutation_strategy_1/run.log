@@ -1,0 +1,156 @@
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: gnuplot -c ./scores.gp ./data/cache_mutation_strategy/scores.tsv ./data/cache_mutation_strategy/scores.pdf
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./scores.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: gnuplot -c ./runtime.gp ./data/cache_mutation_strategy/runtime.tsv ./data/cache_mutation_strategy/runtime.pdf
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points
+Aug 13, 2017 1:40:05 PM RunBenchmark gnuplot
+INFO: "./runtime.gp", line 36: warning: Skipping data file with no valid points

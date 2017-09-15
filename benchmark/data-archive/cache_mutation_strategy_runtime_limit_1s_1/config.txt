@@ -1,0 +1,12 @@
+threads = 3
+reps = 200
+warmup = 5
+cputime_limit = 1000000000
+evaluation_limit = 100000
+archive_size = 100
+iterations = 1000
+generation_size = 100
+differential_evolution_scaling_factor = 0.5
+replacement_strategy = WORST_IN_ARCHIVE
+scalarization_function = NO_PREFERENCE
+cache_mutation_strategy = INVERSE
